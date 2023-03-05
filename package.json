@@ -26,7 +26,7 @@
     "popper.js": "^1.16.1"
   },
   "engines": {
-    "node": "^10.17.31",
+    "node": "^18.13.0",
     "npm": "^6.0.0"
   },
   "description": "## Welcome to the MidTerm Project - the Favourite Book List App",
@@ -39,7 +39,7 @@
     "@types/express-session": "^1.17.0",
     "@types/mongoose": "^5.7.36",
     "@types/morgan": "^1.9.1",
-    "@types/node": "^10.17.31",
+    "@types/node": "^18.13.0",
     "@types/passport": "^1.0.4",
     "@types/passport-local": "^1.0.33",
     "@types/passport-local-mongoose": "^4.0.13"
