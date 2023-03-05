@@ -1,3 +1,7 @@
+//   Enrollment Number :- 301307330
+//   Name :- Khanjan Dave 
+
+
 // modules required for routing
 let express = require('express');
 let router = express.Router();
@@ -90,11 +94,11 @@ router.post('/details/:id', (req, res, next) => {
     let id = req.params.id
     let updatedBook = Book({
       "_id": id,
-      "name": req.body.name,
-      "description": req.body.description,
-      "price": req.body.price,
-      "author": req.body.author,
-      "genre" : req.body.genre
+      "Title": req.body.Title,
+      "Description": req.body.Description,
+      "Price": req.body.Price,
+      "Author": req.body.Author,
+      "Genre" : req.body.Genre
     });
     console.log('req.body.price' , req.body)
     Book.updateOne({_id: id}, updatedBook, (err) => {

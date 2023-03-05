@@ -1,3 +1,8 @@
+<!-- 
+  Enrollment Number :- 301307330
+  Name :- Khanjan Dave 
+-->
+
 <% include ../partials/header.ejs %>
 
     <!-- MAIN CONTENT -->
@@ -9,14 +14,16 @@
           <!-- FIX THE ADD BUTTON BELOW -->
           <!-- ------------------------ -->
           
+          <!-- add route to redirect to the add book page  -->
+
           <a href="books/details" class="btn btn-primary" role="button"><i class="fa fa-plus"></i> Add a book</a>
           <br>
           <div class="table-responsive">
             <table class="table table-bordered table-striped table-hover">
               <thead>
                 <tr>
-                  <th>Title</th>
-                  <!-- <th class="text-center col-6">Description</th> -->
+                  <th class="text-center">Title</th>
+                  <th class="text-center col-6">Description</th>
                   <th class="text-center">Price</th>
                   <th class="text-center">Author</th>
                   <th class="text-center">Genre</th>
@@ -29,7 +36,7 @@
                 <% for (let count = 0; count < books.length; count++) { %>
                 <tr>
                   <td><%= books[count].Title %></td>
-                  <!-- <td class="text-center col-6"><%=books[count].Description%></td> -->
+                  <td class="text-center col-6"><%=books[count].Description%></td>
                   <td class="text-center">$<%= books[count].Price %></td>
                   <td class="text-center"><%= books[count].Author %></td>
                   <td class="text-center"><%= books[count].Genre %></td>
